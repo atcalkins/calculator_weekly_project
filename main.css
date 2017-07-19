@@ -1,0 +1,52 @@
+.calculator {
+  background-color: white;
+  display: block;
+}
+
+.top {
+  display: flex;
+}
+
+#screen {
+  font-size: 30px;
+  font-weight: lighter;
+  text-align: right;
+  width: 310px;
+  height: 100px;
+  margin-left: 1px;
+  margin-bottom: 1px;
+  background-color: limegreen;
+  color: white;
+}
+
+.clear {
+  background-color: limegreen;
+  color: white;
+
+}
+
+.button {
+  background-color: limegreen;
+  color: white;
+}
+
+.button, .operator, #answer, .clear {
+  width: 100px;
+  height: 100px;
+  margin: 1px;
+  font-weight: lighter;
+  font-size: 30px;
+  border: 0;
+}
+
+.operator {
+  background-color: lightgreen;
+}
+
+.clear:hover, #answer:hover {
+  background-color: lightgreen;
+}
+
+#answer {
+  background-color: limegreen;
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="main.css">
+    <title>Calculator Project</title>
+  </head>
+  <body>
+    <div id="calculator">
+    	<div class="top">
+    		<button class="clear" name="clear" value="C" onclick="clearDisplay()">C</button>
+    		<input type="text" class="calcDisplay" id="screen" />
+    	</div>
+      <div class="rows">
+        <button class="button" name="button7" value="7" onclick="numInput('7')">7</button>
+        <button class="button" name="button8" value="8" onclick="numInput('8')">8</button>
+        <button class="button" name="button9" value="9" onclick="numInput('9')">9</button>
+        <button class="operator" name="divide" value="/" onclick="calcAction('divide')">/</button>
+      </div>
+
+      <div class="rows">
+        <button class="button" name="button4" value="4" onclick="numInput('4')">4</button>
+        <button class="button" name="button5" value="5" onclick="numInput('5')">5</button>
+        <button class="button" name="button6" value="6" onclick="numInput('6')">6</button>
+        <button class="operator" name="multiply" value="*" onclick="calcAction('multiply')">X</button>
+      </div>
+
+      <div class="rows">
+        <button class="button" name="button1" value="1" onclick="numInput('1')">1</button>
+        <button class="button" name="button2" value="2" onclick="numInput('2')">2</button>
+        <button class="button" name="button3" value="3" onclick="numInput('3')">3</button>
+        <button class="operator" name="subtract" value="-" onclick="calcAction('subtract')">-</button>
+      </div>
+
+      <div class="rows">
+        <button class="button" name="button0" value="0" onclick="numInput('0')">0</button>
+        <button class="button" name="decimal" value="." onclick="insertDecimal('.')">.</button>
+        <button id="answer" name="answer" value="=" onclick="calculate()">=</button>
+        <button class="operator" name="add" value="+" onclick="calcAction('add')">+</button>
+      </div>
+
+    </div>
+
+
+
+<script src="main.js"></script>
+  </body>
+</html>
