@@ -30,15 +30,6 @@
   color: white;
 }
 
-.button, .operator, #answer, .clear {
-  width: 100px;
-  height: 100px;
-  margin: 1px;
-  font-weight: lighter;
-  font-size: 30px;
-  border: 0;
-}
-
 .operator {
   background-color: lightgreen;
 }
@@ -49,4 +40,13 @@
 
 #answer {
   background-color: limegreen;
+}
+
+.button, .operator, #answer, .clear {
+  width: 100px;
+  height: 100px;
+  margin: 1px;
+  font-weight: lighter;
+  font-size: 30px;
+  border: 0;
 }

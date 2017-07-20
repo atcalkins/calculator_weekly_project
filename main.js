@@ -16,9 +16,9 @@ function clearDisplay() {
 
 function numInput(num) {
   let display = document.getElementById("screen");
-  if (display.value == "" && num == "0") {
+  if (display.value === "" && num === "0") {
     return;
-  } else if (calculationFinished == true) {
+  } else if (calculationFinished === true) {
     display.value = num;
     calculationFinished = false;
   } else {
@@ -26,7 +26,7 @@ function numInput(num) {
   }
 }
 
-function insertDecimal(dec) {
+function decimal(dec) {
   let display = document.getElementById("screen");
   for (i = 0; i < display.value.length; i++)
     if (display.value.charAt(i) == ".") {
@@ -43,26 +43,26 @@ function calcAction(command) {
 
   if (mathInput == 0) {
     storedNum = display.value;
-  } else if (mathInput == 1) {
+  } else if (mathInput === 1) {
     storedNum = evalStored + evalDisplay;
-  } else if (mathInput == 2) {
+  } else if (mathInput === 2) {
     storedNum = evalStored - evalDisplay;
-  } else if (mathInput == 3) {
+  } else if (mathInput === 3) {
     storedNum = evalStored * evalDisplay;
-  } else if (mathInput == 4) {
+  } else if (mathInput === 4) {
     storedNum = evalStored / evalDisplay;
   }
 
-  if (command == "add") {
+  if (command === "add") {
     operation = 1;
   } else if (command == "subtract") {
     operation = 2;
   }
-  if (command == "multiply") {
+  if (command === "multiply") {
     operation = 3;
   }
 
-  if (command == "divide") {
+  if (command === "divide") {
     operation = 4;
   }
 
@@ -76,13 +76,13 @@ function calculate() {
   let evalDisplay = eval(displayNum),
     evalStored = eval(storedNum);
 
-  if (operation == 1) {
+  if (operation === 1) {
     displayNum = evalStored + evalDisplay;
-  } else if (operation == 2) {
+  } else if (operation === 2) {
     displayNum = evalStored - evalDisplay;
-  } else if (operation == 3) {
+  } else if (operation === 3) {
     displayNum = evalStored * evalDisplay;
-  } else if (operation == 4) {
+  } else if (operation === 4) {
     displayNum = evalStored / evalDisplay;
   }
 
